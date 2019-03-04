@@ -1,8 +1,8 @@
 import React from "react"
 import Container from "../components/container"
 import styles from "./styling.module.css"
-import Layout from "../components/layout"
 import { Link } from "gatsby";
+
 
 const Item = props => (
     <div className={styles.item}>
@@ -16,7 +16,6 @@ const Item = props => (
   )
 
 export default () => (
-    
         <Container>
             <h1>This is a page that has random items</h1>
             <p>Feel free to browse through these..</p>
@@ -40,7 +39,7 @@ export default () => (
                 image="https://bauerpottery.com/media/catalog/product/w/h/white_coffee_mug.jpg"
                 itemDescription="It's a coffee mug"
                 urltext="Details"
-                url="/chair"
+                url="/mug"
             />
         </Container>
     
