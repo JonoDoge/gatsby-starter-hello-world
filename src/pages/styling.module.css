@@ -1,7 +1,16 @@
+html {
+    background-color: lightsalmon
+}
+
 .item {
     display: flex;
     align-items: center;
     margin: 0 auto 12px auto;
+    border: 2px;
+    border-color: saddlebrown;
+    border-style: solid;
+    background-color: antiquewhite
+    
   }
   
   .item:last-child {
@@ -13,19 +22,34 @@
     width: 96px;
     height: 96px;
     margin: 0;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
   }
   
   .description {
     flex: 1;
     margin-left: 18px;
     padding: 12px;
+    font-size: 22px
   }
   
   .itemName {
     margin: 0 0 12px 0;
     padding: 0;
+    font-size: 32px;
+    font-family: 'Lucida Sans'
   }
   
   .itemDescription {
     margin: 0;
+  }
+
+  h1 {
+      background-color: beige;
+      font-family: "Times";
+  }
+  p{
+      background-color: bisque;
+      font-family: "Times";
   }

@@ -21,7 +21,7 @@ export default () => (
             <Item
                 itemName="Yoyo"
                 image="https://www.ikea.com/gb/en/images/products/jokkmokk-chair-antique-stain__0475400_pe615581_s4.jpg"
-                itemDescription="It's a cool lookin' wooden chair."               
+                itemDescription="It's a cool lookin' wooden chair bro."               
             />
         </Container>
     </Layout>
