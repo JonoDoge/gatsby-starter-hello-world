@@ -19,7 +19,7 @@ export default () => (
         <Container>
             <h1>Here's some more information about the chair</h1>
             <Item
-                itemName="Yoyo"
+                itemName="Chair"
                 image="https://www.ikea.com/gb/en/images/products/jokkmokk-chair-antique-stain__0475400_pe615581_s4.jpg"
                 itemDescription="It's a cool lookin' wooden chair bro."               
             />
