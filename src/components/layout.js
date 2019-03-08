@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby";
+import styles from "../pages/styling.module.css"
 
 
 export default ({ children }) => (
