@@ -1,47 +1,46 @@
 import React from "react"
-import Container from "../components/container"
-import styles from "./styling.module.css"
-import { Link } from "gatsby";
+import styled from "styled-components";
+import Item from '../components/item.js';
 
 
-const Item = props => (
-    <div className={styles.item}>
-      <img src={props.image} className={styles.image} alt="" />
-      <div className={styles.description}>
-        <h2 className={styles.itemName}>{props.itemName}</h2>
-        <p className={styles.itemDescription}>{props.itemDescription}</p>
-        <Link to={props.url}>{props.urltext}</Link>
-      </div>
-    </div>
-  )
+const StyledView = styled.div`
+  background-color: lightsalmon;
+`;
+
+const Wrapper = styled.div`
+  margin:  4rem auto ;
+  max-width: 600px;
+`;
+
+const Heading = styled.h1`
+  background-color: white;
+  border:dotted;
+`;
+
+const P1 = styled.p`
+background-color: white;
+`;
 
 export default () => (
-        <Container>
-            <h1>This is a page that has random items</h1>
-            <p>Feel free to browse through these..</p>
-            <Item
-                itemName="Yoyo"
-                image="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Yo-Yo-Plastic-Toy-Green.jpg/1200px-Yo-Yo-Plastic-Toy-Green.jpg"
-                itemDescription="It's a yoyo"
-                urltext="Details"
-                url="/yoyo"
-            />
-            
-            <Item
-                itemName="Chair"
-                image="https://www.ikea.com/gb/en/images/products/jokkmokk-chair-antique-stain__0475400_pe615581_s4.jpg"
-                itemDescription="It's a chair"
-                urltext="Details"
-                url="/chair"
-            />
-            <Item
-                itemName="Coffee mug"
-                image="https://bauerpottery.com/media/catalog/product/w/h/white_coffee_mug.jpg"
-                itemDescription="It's a coffee mug"
-                urltext="Details"
-                url="/mug"
-            />
-        </Container>
-    
-     
+  <StyledView>
+    <Wrapper>
+      <Heading>This is a page that has random items</Heading>
+      <P1>Feel free to browse through these..</P1>
+      <Item 
+      itemname= "Yoyo"
+      itemdescription="It's a yoyo"
+      itemimage="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Yo-Yo-Plastic-Toy-Green.jpg/1200px-Yo-Yo-Plastic-Toy-Green.jpg"
+      itemLink="/yoyo/"/>
+      <Item  
+      itemname= "Chair"
+      itemdescription="It's a chair"
+      itemimage="https://www.ikea.com/us/en/images/products/ekedalen-chair-brown__0516603_PE640439_S4.JPG"
+      itemLink="/chair/" />
+      <Item 
+      itemname= "Coffee mug"
+      itemdescription="It's a mug"
+      itemimage="https://target.scene7.com/is/image/Target/GUEST_d1faf59c-577b-463b-8cc7-14f7980d3850?wid=488&hei=488&fmt=pjpeg"
+      itemLink="/mug/"/>
+    </Wrapper>
+  </StyledView>
 )
