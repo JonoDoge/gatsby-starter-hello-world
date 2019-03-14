@@ -2,9 +2,8 @@ import React from "react"
 import styled from "styled-components";
 import Item from '../components/item.js';
 
-
 const StyledView = styled.div`
-  background-color: lightsalmon;
+  background-color: silver;
 `;
 
 const Wrapper = styled.div`
@@ -14,11 +13,13 @@ const Wrapper = styled.div`
 
 const Heading = styled.h1`
   background-color: white;
-  border:dotted;
+  border:solid;
+  text-align:center;
 `;
 
 const P1 = styled.p`
-background-color: white;
+background-color: #c69;
+text-align:center;
 `;
 
 export default () => (
@@ -30,17 +31,20 @@ export default () => (
       itemname= "Yoyo"
       itemdescription="It's a yoyo"
       itemimage="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Yo-Yo-Plastic-Toy-Green.jpg/1200px-Yo-Yo-Plastic-Toy-Green.jpg"
-      itemLink="/yoyo/"/>
+      itemlink="/yoyo/"
+      itemlinktext="Click here to view more information about the item"/>
       <Item  
       itemname= "Chair"
       itemdescription="It's a chair"
       itemimage="https://www.ikea.com/us/en/images/products/ekedalen-chair-brown__0516603_PE640439_S4.JPG"
-      itemLink="/chair/" />
+      itemlink="/chair/"
+      itemlinktext="Click here to view more information about the item" />
       <Item 
       itemname= "Coffee mug"
       itemdescription="It's a mug"
       itemimage="https://target.scene7.com/is/image/Target/GUEST_d1faf59c-577b-463b-8cc7-14f7980d3850?wid=488&hei=488&fmt=pjpeg"
-      itemLink="/mug/"/>
+      itemlink="/mug/"
+      itemlinktext="Click here to view more information about the item"/>
     </Wrapper>
   </StyledView>
 )

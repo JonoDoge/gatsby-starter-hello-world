@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
-import styled from 'styled-components';
-import { type } from 'os';
+import styled from 'styled-components'
 
 const ItemContainer = styled.div`
     margin: 3rem auto;
@@ -20,28 +19,35 @@ const ItemName = styled.h1`
     padding: 0;
 `;
 
-const ItemDescription = styled.p`
+const ItemText = styled.p`
     margin: 0;
 `;
 
-const ItemLink = styled.p`
-    margin: 0;
+const ItemDescriptions = styled.div`
+    flex: 1;
+    margin-left: 18px;
+    padding: 12px;
 `;
 
 const ItemDiv = styled.div`
     display: flex;
     align-items: center;
     margin: 0 auto 12px auto;
+    border:solid;
+    border-color: #c69;
 `;
+
 
 const Item = (props) => {
     return(
         <ItemContainer>
                 <ItemDiv>
                     <ItemImage src={props.itemimage} alt=""/>
-                    <ItemName>{props.itemname}</ItemName>
-                    <ItemDescription>{props.itemdescription}</ItemDescription>
-                    <ItemLink to={props.itemlink}>Click here to view more information</ItemLink>
+                    <ItemDescriptions>
+                        <ItemName>{props.itemname}</ItemName>
+                        <ItemText>{props.itemdescription}</ItemText>
+                        <Link to={props.itemlink}>{props.itemlinktext}</Link>
+                    </ItemDescriptions>
                 </ItemDiv>
         </ItemContainer>
     )
