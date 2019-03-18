@@ -18,8 +18,8 @@ const Heading = styled.h1`
 `;
 
 const P1 = styled.p`
-background-color: #c69;
-text-align:center;
+  background-color: #c69;
+  text-align:center;
 `;
 
 export default () => (
