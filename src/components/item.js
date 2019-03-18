@@ -41,14 +41,14 @@ const ItemDiv = styled.div`
 const Item = (props) => {
 	return(
 		<ItemContainer>
-		<ItemDiv>
-		<ItemImage src={props.itemimage} alt=""/>
-		<ItemDescriptions>
-			<ItemName>{props.itemname}</ItemName>
-			<ItemText>{props.itemdescription}</ItemText>
-			<Link to={props.itemlink}>{props.itemlinktext}</Link>
-		</ItemDescriptions>
-		</ItemDiv>
+			<ItemDiv>
+				<ItemImage src={props.itemimage} alt=""/>
+				<ItemDescriptions>
+					<ItemName>{props.itemname}</ItemName>
+					<ItemText>{props.itemdescription}</ItemText>
+					<Link to={props.itemlink}>{props.itemlinktext}</Link>
+				</ItemDescriptions>
+			</ItemDiv>
 		</ItemContainer>
    )
 	}
