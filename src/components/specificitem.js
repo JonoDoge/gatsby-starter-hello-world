@@ -5,12 +5,11 @@ import styled from 'styled-components'
 const ItemContainer = styled.div`
 	margin: 3rem auto;
 	max-width: 600px;
-	background-color:white;
 `;
 const ItemImage = styled.img`
 	flex: 0 0 96px;
-	width: 96px;
-	height: 96px;
+	width: 240px;
+	height: 240px;
 	margin: 0;
 	border:solid;
 `;
@@ -18,6 +17,7 @@ const ItemImage = styled.img`
 const ItemName = styled.h1`
 	margin: 0 0 12px 0;
 	padding: 0;
+	
 `;
 
 const ItemText = styled.p`
@@ -27,8 +27,11 @@ const ItemText = styled.p`
 const ItemDescriptions = styled.div`
 	flex: 1;
 	margin-left: 18px;
-	padding: 12px;
-
+    padding: 12px;
+	border-color:gray;
+	border:solid;
+	text-align:center;
+	background-color: white;
 `;
 
 const ItemDiv = styled.div`

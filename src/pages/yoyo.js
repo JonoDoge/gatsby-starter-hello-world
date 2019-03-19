@@ -1,30 +1,30 @@
 import React from "react"
 import styled from "styled-components";
-import Item from '../components/item.js';
+import Item from '../components/specificitem.js';
 
 
 const StyledView = styled.div`
   background-color: silver;
-  padding: 20px
-  border-width: 5px
-  border: solid
-  border-color: #c69
+  padding: 20px;
+  border-width: 5px;
+  border: solid;
+  border-color: #c69;
 `;
 
 const Wrapper = styled.div`
-  margin:  4rem auto 
-  max-width: 600px
+  margin:  4rem auto; 
+  max-width: 600px;
 `;
 
 const Heading = styled.h1`
-  background-color: white
-  border:solid
-  text-align:center
+  background-color: white;
+  border:solid;
+  text-align:center;
 `;
 
 const P1 = styled.p`
-  background-color: #c69
-  text-align:center
+  background-color: #c69;
+  text-align:center;
 `;
 
 export default () => (
