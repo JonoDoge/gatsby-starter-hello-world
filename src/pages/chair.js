@@ -17,21 +17,26 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-	background-color: white;
-	border:solid;
 	text-align:center;
 `;
 
 const P1 = styled.p`
-	background-color: #c69;
+	text-align:center;
+`;
+
+const HeadingDiv = styled.div`
+	background-color:white;
+	border:solid;
 	text-align:center;
 `;
 
 export default () => (
 	<StyledView>
 		<Wrapper>
-			<Heading>This is a page that has random items</Heading>
-			<P1>Cool item right?</P1>
+			<HeadingDiv>
+				<Heading>This is a page that has random items</Heading>
+				<P1>Cool item right?</P1>
+			</HeadingDiv>
 			<Item 
 			itemname= "Chair"
 			itemdescription="It's a brown chair that's pretty comfortable to sit on."

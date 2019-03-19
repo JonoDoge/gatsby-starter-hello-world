@@ -40,6 +40,7 @@ const ItemDiv = styled.div`
 	margin: 0 auto 12px auto;
 	border:solid;
 	border-color: #c69;
+	background-color: #d1d6d1;
 `;
 
 
